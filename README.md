@@ -19,7 +19,7 @@ self.zapisz.clicked.connect(self.validate_form)
           errors.append("Imie i nazwisko jest wymagane")
       else:
           regex = QRegularExpression(r"^[A-Z][a-z]+[A-Z][a-z]+$")
-          if not regex.match(self.imie_i_nazwisko_input.text().hasMatch()):
+          if not regex.match(self.imie_i_nazwisko_input.text()).hasMatch():
               errors.append("Imie i nazwisko musi być z dużej litery")
       if not self.email_input.text().strip():
           errors.append("Adres e-mail jest wymagany.")
