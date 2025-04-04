@@ -26,4 +26,10 @@ def to_decimal(dana):
     for i in range(len(dana)):
         check = int(dana[-i-1])
         pom += check * 2 ** i
-    return pom
+return def nwd(a, b):
+    while b > 0:
+        pom = a
+        a = b
+        b = pom % b
+    return a
+
