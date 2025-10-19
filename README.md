@@ -1,3 +1,5 @@
+
+```python
 def sito(n):
     pierwsze = [True]*n
     pierwsze[0] = pierwsze[1] = False
@@ -61,4 +63,5 @@ def scalanie(tab):
     wynik.extend(prawa[j:])
     return wynik
 
-print(scalanie([8, 3, 5, 2, 9]))  
+print(scalanie([8, 3, 5, 2, 9]))
+```
